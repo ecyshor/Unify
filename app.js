@@ -21,8 +21,11 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+/**
+ * Auth0 configurations
+ */
 app.use(express.cookieParser());
-app.use(express.session({secret: 'sesss'}));
+app.use(express.session({secret: 'shhhhhh'}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(app.router);
@@ -38,7 +41,7 @@ var server = http.createServer(app).listen(app.get('port'), function () {
 /**
  * Socket.IO server (single process only)
  */
-webSocket.configWebSocket(server);
+//webSocket.configWebSocket(server);
 
 
 app.get('/', routes.index);

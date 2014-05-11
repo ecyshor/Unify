@@ -1,8 +1,15 @@
 extends layout
 
 block content
-    script(src='./javascripts/login_widget.js')
-    button(onclick='widget.signin()') Login
+    script(src='https://cdn.auth0.com/w2/auth0-widget-3.0.min.js')
+    script(type='text/javascript').
+        console.log('test');
+        var widget = new Auth0Widget({
+            domain: '#{process.env.AUTH0_DOMAIN}',
+    clientID: '#{process.env.AUTH0_CLIENT_ID}',
+    callbackURL: '#{process.env.AUTH0_CALLBACK_URL}'
+    });
+    button(onclick='widget.signin();') Login
     //
     //#chat
     //    #nickname
