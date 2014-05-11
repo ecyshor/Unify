@@ -1,6 +1,15 @@
 extends layout
 
 block content
+    script(src='https://d19p4zemcycm7a.cloudfront.net/w2/auth0-widget-2.4.6.min.js')
+    script(type='text/javascript')
+        var widget = new Auth0Widget({
+        domain:         '<%= env["AUTH0_DOMAIN"] %>',
+        clientID:       '<%= env["AUTH0_CLIENT_ID"] %>',
+        callbackURL:    '<%= env["AUTH0_CALLBACK_URL"] %>'
+        });
+    button(onclick='widget.signin()') Login
+
     #chat
         #nickname
             form.wrap#set-nickname

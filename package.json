@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+    "name": "unify",
+    "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -9,6 +9,8 @@
     "express": "3.5.1",
       "jade": "*",
       "socket.io": "^0.9.16",
-      "mongoose": "^3.8.9"
+      "mongoose": "^3.8.9",
+      "passport": "^0.2.0",
+      "passport-auth0": "^0.1.0"
   }
 }
