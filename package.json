@@ -1,16 +1,16 @@
 {
     "name": "unify",
     "version": "0.0.1",
-  "private": true,
+    "private": true,
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
     "express": "3.5.1",
       "jade": "*",
-      "socket.io": "^0.9.16",
       "mongoose": "^3.8.9",
       "passport": "^0.2.0",
-      "passport-auth0": "^0.1.0"
+      "passport-auth0": "^0.1.0",
+      "pusher": "^0.1.3"
   }
 }

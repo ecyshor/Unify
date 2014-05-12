@@ -1,27 +1,46 @@
 extends layout
 
 block content
-    script(src='https://cdn.auth0.com/w2/auth0-widget-3.0.min.js')
-    script(type='text/javascript').
-        console.log('test');
-        var widget = new Auth0Widget({
-            domain: '#{process.env.AUTH0_DOMAIN}',
-    clientID: '#{process.env.AUTH0_CLIENT_ID}',
-    callbackURL: '#{process.env.AUTH0_CALLBACK_URL}'
-    });
-    button(onclick='widget.signin();') Login
+    .container
+        .page-header
+            h1 Sticky footer with fixed navbar
+        p.lead
+            | Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within
+            code #wrap
+            | with
+            code padding-top: 60px;
+            | on the
+            code .container
+            | .
+        p
+            | Back to
+            a(href='/template/sticky-footer') the default sticky footer
+            | minus the navbar.
+    //script(src='https://cdn.auth0.com/w2/auth0-widget-3.0.min.js')
+    //script(type='text/javascript').
+    //    console.log('test');
+    //    var widget = new Auth0Widget({
+    //        domain: '#{process.env.AUTH0_DOMAIN}',
+    //        clientID: '#{process.env.AUTH0_CLIENT_ID}',
+    //        callbackURL: '#{process.env.AUTH0_CALLBACK_URL}'
+    //        });
+    //button(onclick='widget.signin();') Login
+    //div
+    // #{user}
+    //div
+    // #{env}
     //
-    //#chat
-    //    #nickname
-    //        form.wrap#set-nickname
-    //            p Please type in your nickname and press enter.
-    //            input#nick
-    //            p#nickname-err Nickname already in use
-    //    #connecting
-    //        .wrap Connecting to socket.io server
-    //    #messages
-    //        #nicknames
-    //        #lines
-    //    form#send-message
-    //        input#message
-    //        button Send
+    //                     #chat
+    //                         #nickname
+    //                             form.wrap#set-nickname
+    //                                 p Please type in your nickname and press enter.
+    //                                 input#nick
+    //                                 p#nickname-err Nickname already in use
+    //                         #connecting
+    //                             .wrap Connecting to socket.io server
+    //                         #messages
+    //                             #nicknames
+    //                             #lines
+    //                         form#send-message
+    //                             input#message
+    //                             button Send

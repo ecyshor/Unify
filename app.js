@@ -7,28 +7,30 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var app = express();
-var webSocket = require('./lib/setup_websocket.js');
+var webSocket = require('./lib/setup_pusher.js');
 var passport = require('passport');
-var Auth0Strategy = require('passport-auth0');
+var strategy = require('./lib/setup_passport.js');
 // all environments
-app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
-/**
- * Auth0 configurations
- */
-app.use(express.cookieParser());
-app.use(express.session({secret: 'shhhhhh'}));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(app.router);
+app.configure(function () {
+    app.set('port', process.env.PORT || 3000);
+    app.set('views', path.join(__dirname, 'views'));
+    app.set('view engine', 'jade');
+    app.use(express.favicon());
+    app.use(express.logger('dev'));
+    app.use(express.json());
+    app.use(express.urlencoded());
+    app.use(express.methodOverride());
+    app.use(express.static(path.join(__dirname, 'public')));
+    /**
+     * Auth0 configurations
+     */
+    app.use(express.cookieParser());
+    app.use(express.session({secret: 'shhhhhh'}));
+    app.use(passport.initialize());
+    app.use(passport.session());
+    app.use(app.router);
+
+});
 // development only
 if ('development' == app.get('env')) {
     app.use(express.errorHandler());
@@ -45,9 +47,15 @@ var server = http.createServer(app).listen(app.get('port'), function () {
 
 
 app.get('/', routes.index);
+app.get('/error', function (req, res) {
+    res.send("Error");
+});
 app.get('/callback',
-    passport.authenticate('auth0'),
+    passport.authenticate('auth0', { failureRedirect: '/error' }),
     function (req, res) {
+        if (!req.user) {
+            throw new Error('user null');
+        }
         res.redirect("/");
     });
 
