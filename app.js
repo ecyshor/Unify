@@ -15,7 +15,7 @@ app.configure(function () {
     app.set('port', process.env.PORT || 3000);
     app.set('views', path.join(__dirname, 'views'));
     app.set('view engine', 'jade');
-    app.use(express.favicon());
+    //app.use(express.favicon());
     app.use(express.logger('dev'));
     app.use(express.json());
     app.use(express.urlencoded());
@@ -51,7 +51,10 @@ app.get('/error', function (req, res) {
     res.send("Error");
 });
 app.get('/callback',
-    passport.authenticate('auth0', { failureRedirect: '/error' }),
+    passport.authenticate('auth0',
+        {   successRedirect: '/',
+            failureRedirect: '/login'
+        }),
     function (req, res) {
         if (!req.user) {
             throw new Error('user null');
@@ -59,4 +62,7 @@ app.get('/callback',
         res.redirect("/");
     });
 
-
+app.get('/logout', function (req, res) {
+    req.logout();
+    res.redirect('/');
+});

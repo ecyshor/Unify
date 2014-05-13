@@ -1,0 +1,18 @@
+//
+   Created by Nicu on 13/05/14.
+//Droptdown for navbar when user is not logged in
+ul.nav.navbar-nav.navbar-right
+    li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Account
+            b.caret
+        ul.dropdown-menu
+            li
+                a(href='#Register' onclick='widget.signup()') Register
+            li
+                a(href='#Register' onclick='widget.reset()') Forgot password
+            li.divider
+            li.dropdown-header I have an account
+            li
+                a(href='#Login' onclick='widget.signin()') Login
+            include login_widget

@@ -1,0 +1,17 @@
+//
+   Created by Nicu on 13/05/14.
+//Dropdown when user is logged in
+ul.nav.navbar-nav.navbar-right
+    li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | #{user.name}
+            b.caret
+        ul.dropdown-menu
+            li
+                a(href='/profile' onclick='profile()') Details
+            li
+                a(href='#stuff' onclick='stuff()') Stuff
+            li.divider
+            li.dropdown-header I want to be anon ;)
+            li
+                a(href='/logout') Logout
