@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdbe4b86-708d-4a6f-b93a-27aae0fd92c4" name="Default" comment="First&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/appStyle.css" />
-      <change type="DELETED" beforePath="C:\Users\Chris\WebstormProjects\Unify\public\stylesheets\style.css" afterPath="" />
+    <list default="true" id="cdbe4b86-708d-4a6f-b93a-27aae0fd92c4" name="Default" comment="created view for channel subscribing">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/app_js.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/app_js.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/inc/allUsers/channels.jade" afterPath="$PROJECT_DIR$/views/inc/allUsers/channels.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/inc/userAnonym/login_widget.jade" afterPath="$PROJECT_DIR$/views/inc/userAnonym/login_widget.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/inc/allUsers/posts.jade" afterPath="$PROJECT_DIR$/views/inc/allUsers/posts.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Unify.iws" />
@@ -35,7 +29,7 @@
       <file leaf-file-name="module.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.WebStorm7/system/extLibs/nodejs-v0.10.26-src/core-modules-sources/lib/module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="483" column="33" selection-start="13625" selection-end="13625" vertical-scroll-proportion="0.0" vertical-offset="7685" max-vertical-offset="8908">
+            <state line="483" column="33" selection-start="13625" selection-end="13625" vertical-scroll-proportion="0.0" vertical-offset="8211" max-vertical-offset="9231">
               <folding />
             </state>
           </provider>
@@ -44,7 +38,7 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+            <state line="16" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -53,10 +47,8 @@
       <file leaf-file-name="setup_mongoose.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/setup_mongoose.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-              <folding>
-                <element signature="e#0#39#0" expanded="false" />
-              </folding>
+            <state line="8" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="357">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,16 +56,25 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="21" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="3" column="21" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="channels.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posts.jade" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/inc/allUsers/posts.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.19767442" vertical-offset="0" max-vertical-offset="430">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="channels.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/inc/allUsers/channels.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="74" selection-start="272" selection-end="272" vertical-scroll-proportion="0.41564792" vertical-offset="0" max-vertical-offset="409">
+            <state line="11" column="15" selection-start="305" selection-end="305" vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -82,16 +83,7 @@
       <file leaf-file-name="news_dispacher.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/news_dispacher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sticky-footer-navbar.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/sticky-footer-navbar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+            <state line="6" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -100,7 +92,7 @@
       <file leaf-file-name="events.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.WebStorm7/system/extLibs/nodejs-v0.10.26-src/core-modules-sources/lib/events.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="14" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="4811">
+            <state line="72" column="14" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="5134">
               <folding />
             </state>
           </provider>
@@ -109,7 +101,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="2" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="11" column="2" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -118,7 +110,7 @@
       <file leaf-file-name="appStyle.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/appStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+            <state line="3" column="20" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -132,7 +124,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -203,6 +195,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -375,7 +368,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -516,7 +508,11 @@
       <created>1399933275105</created>
       <updated>1399933275105</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created view for channel subscribing">
+      <created>1400089959504</created>
+      <updated>1400089959504</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -526,18 +522,18 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49945828" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23704867" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18448023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5651491" sideWeight="0.70497805" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24489796" sideWeight="0.25183016" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24489796" sideWeight="0.74816984" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24489796" sideWeight="0.74816984" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.49945828" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="760" height="840" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -565,7 +561,8 @@
     <MESSAGE value="Moved widget to separate file" />
     <MESSAGE value="Changed auth, works. Bug on callback" />
     <MESSAGE value="Pusher configuration added, fixed some bugs in authentication &#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pusher configuration added, fixed some bugs in authentication &#10;" />
+    <MESSAGE value="created view for channel subscribing" />
+    <option name="LAST_COMMIT_MESSAGE" value="created view for channel subscribing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -575,6 +572,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/sticky-footer-navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebStorm7/system/extLibs/nodejs-v0.10.26-src/core-modules-sources/lib/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="14" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="5134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/appStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userAnonym/login_widget.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="3" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
@@ -591,16 +616,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userIsLogged/profile.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userIsLogged/createPost.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/allUsers/posts.jade">
@@ -619,9 +640,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userAnonym/navbarPartial.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
-          <folding />
-        </state>
+        <state line="17" column="32" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userIsLogged/navbarPartial.jade">
@@ -633,44 +652,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/allUsers/footer.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="9" column="20" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/navbar.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="631" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="493">
-          <folding />
-        </state>
+        <state line="20" column="48" selection-start="631" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="493" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="20" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1020">
-          <folding />
-        </state>
+        <state line="47" column="20" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/setup_pusher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="663">
-          <folding />
-        </state>
+        <state line="4" column="7" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/setup_passport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="595">
-          <folding />
-        </state>
+        <state line="29" column="26" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="7" column="49" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/auth.css">
@@ -703,16 +710,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="21" column="34" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="21" column="34" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/meta.rnc">
@@ -736,7 +739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+        <state line="16" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
@@ -744,31 +747,23 @@
     <entry file="file://$PROJECT_DIR$/lib/setup_mongoose.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/setup_passport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="50" selection-start="277" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="561">
-          <folding />
-        </state>
+        <state line="9" column="50" selection-start="277" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/setup_pusher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="9" column="3" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/allUsers/footer.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="209" selection-end="209" vertical-scroll-proportion="0.26748252" vertical-offset="0" max-vertical-offset="572">
-          <folding />
-        </state>
+        <state line="9" column="20" selection-start="209" selection-end="209" vertical-scroll-proportion="0.26748252" vertical-offset="0" max-vertical-offset="572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
@@ -787,9 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="10" selection-start="1312" selection-end="1313" vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="48" column="10" selection-start="1312" selection-end="1313" vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="1258" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
@@ -801,23 +794,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userAnonym/navbarPartial.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="233" selection-end="233" vertical-scroll-proportion="0.24637681" vertical-offset="0" max-vertical-offset="483">
-          <folding />
-        </state>
+        <state line="7" column="19" selection-start="233" selection-end="233" vertical-scroll-proportion="0.24637681" vertical-offset="0" max-vertical-offset="483" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userIsLogged/createPost.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.21294363" vertical-offset="0" max-vertical-offset="479">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.21294363" vertical-offset="0" max-vertical-offset="479" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userIsLogged/profile.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.49686846" vertical-offset="0" max-vertical-offset="479">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.49686846" vertical-offset="0" max-vertical-offset="479" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/auth.css">
@@ -850,9 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/navbar.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="637" selection-end="637" vertical-scroll-proportion="0.70415646" vertical-offset="35" max-vertical-offset="493">
-          <folding />
-        </state>
+        <state line="19" column="17" selection-start="637" selection-end="637" vertical-scroll-proportion="0.70415646" vertical-offset="35" max-vertical-offset="493" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/userIsLogged/navbarPartial.jade">
@@ -864,9 +849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.041564792" vertical-offset="0" max-vertical-offset="409">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.041564792" vertical-offset="0" max-vertical-offset="409" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inc/postsContainer.jade">
@@ -878,7 +861,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/appStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+        <state line="3" column="20" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
@@ -890,16 +873,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/inc/allUsers/posts.jade">
+    <entry file="file://$PROJECT_DIR$/views/inc/allUsers/channels.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="470" selection-end="470" vertical-scroll-proportion="0.9779951" vertical-offset="93" max-vertical-offset="799">
+        <state line="11" column="15" selection-start="305" selection-end="305" vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/inc/allUsers/channels.jade">
+    <entry file="file://$PROJECT_DIR$/views/inc/allUsers/posts.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="74" selection-start="272" selection-end="272" vertical-scroll-proportion="0.41564792" vertical-offset="0" max-vertical-offset="409">
+        <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.19767442" vertical-offset="0" max-vertical-offset="430">
           <folding />
         </state>
       </provider>
