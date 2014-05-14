@@ -72,7 +72,9 @@ app.post('/create', function (req, res) {
     }
     var channel = req.body.channel;
 
-    res.render('/inc/allUsers/posts', {post: req.body.data, user: req.user.name}, function (err, html) {
+    res.render('/inc/allUsers/posts', {posts: [
+        {post: req.body.data, user: req.user.name}
+    ]}, function (err, html) {
         pusher.trigger(channel, 'new-post', html);
     });
 });
