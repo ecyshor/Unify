@@ -5,7 +5,7 @@
 
 var pusher = new Pusher('0007517e1e322f716c8a');
 pusher.connection.bind('state_change', function (states) {
-    alert("Pusher's current state is " + states.current);
+    console.log("Pusher's current state is " + states.current);
 });
 
 var channels = [];
