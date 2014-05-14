@@ -3,7 +3,7 @@
  * Pusher client side javascript
  */
 
-var pusher = new Pusher('0007517e1e322f716c8a');
+var pusher = new Pusher('383a1fd97db791afc762');
 pusher.connection.bind('state_change', function (states) {
     console.log("Pusher's current state is " + states.current);
 });
@@ -15,7 +15,7 @@ function subscribeToChannel(channelName) {
     var channel = pusher.subscribe(channelName);
     channel.bind('new-post', function (data) {
         alert(data);
-        $('#centerPostsInsideJumbatron').prepend(data);
+        $('#centerPostsInsideJumbatron').prepend(data.data);
     });
     $('#channels').prepend('<p>' + channelName + '</p>');
     channels.push(channel);

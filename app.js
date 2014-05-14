@@ -68,13 +68,14 @@ app.get('/logout', function (req, res) {
     res.redirect('/');
 });
 app.post('/create', function (req, res) {
-    if (!req.user)
+    if (!req.user) {
         throw new Error('Not logged in');
+    }
     var channel = req.body.channel;
     res.render('\\inc\\allUsers\\posts', {posts: [
         {post: req.body.data, user: req.user._json.name}
     ]}, function (err, html) {
-        pusher.trigger(channel, 'new-post', html);
+        pusher.trigger(channel, 'new-post', {data: html});
     });
 });
 
