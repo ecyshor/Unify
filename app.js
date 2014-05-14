@@ -68,7 +68,7 @@ app.get('/logout', function (req, res) {
 });
 app.post('/create', function (req, res) {
     if (!req.user) {
-        throw new Error('user null');
+        throw new Error('Please login');
     }
     var channel = req.body.channel;
 

@@ -4,8 +4,7 @@
 .panel.panel-default
     .panel-heading
         b Channels
-        .panel-body
-            | Panel content
+        .panel-body#channels
 p Subscribe to channel
 input(type='text',id='channel')
 .btn.btn-default(name='' type='submit',onclick='subscribeToChannel($(\'#channel\').val())')
