@@ -1,0 +1,23 @@
+#leftAllChannelsInsideJumbatron {
+    float: left;
+    height: 150px;
+    max-width: 200px;
+}
+
+#centerPostsInsideJumbatron {
+    height: 300px;
+    overflow: auto;
+}
+
+.jumbotron {
+    height: 500px;
+}
+
+.panel-heading {
+    height: 150px;
+}
+
+.panel-body {
+    height: 100px;
+    overflow: auto;
+}
