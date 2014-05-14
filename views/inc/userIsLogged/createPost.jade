@@ -2,5 +2,13 @@
    Created by Nicu on 14/05/14.
 
 .panel.panel-default
-    .panel-body
-        | Basic panel
+    .panel-heading
+        | Post to channel:
+        .panel-body
+            form(action='/create',method='POST')
+                | Channel name:
+                input(type='text',name='channel')
+                br
+                textarea(name='data')
+                input(type='submit', value='Post')
+

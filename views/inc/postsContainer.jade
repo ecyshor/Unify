@@ -7,6 +7,6 @@
         include allUsers/channels
     #centerPostsInsideJumbatron
         include allUsers/posts
-if user
-    #downCreatePostInsideJumbatron
-        include userIsLogged/createPost
+        if user
+            #downCreatePostInsideJumbatron
+                include userIsLogged/createPost

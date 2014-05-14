@@ -10,6 +10,7 @@ var app = express();
 var webSocket = require('./lib/setup_pusher.js');
 var passport = require('passport');
 var strategy = require('./lib/setup_passport.js');
+var pusher = require('./lib/setup_pusher.js');
 // all environments
 app.configure(function () {
     app.set('port', process.env.PORT || 3000);
@@ -67,15 +68,18 @@ app.get('/logout', function (req, res) {
     res.redirect('/');
 });
 app.post('/create', function (req, res) {
-    if (!req.user) {
-        throw new Error('user null');
-    }
+//    if (!req.user) {
+//        throw new Error('user null');
+//    }
     var channel = req.body.channel;
+    console.log('we made it');
 
-    res.render('/inc/allUsers/posts', {posts: [
-        {post: req.body.data, user: req.user.name}
+    res.render('\\inc\\allUsers\\posts', {posts: [
+        {post: req.body.data, user: req.body.user._json.name}
     ]}, function (err, html) {
+        console.log(err);
         pusher.trigger(channel, 'new-post', html);
+        console.log(html);
     });
 });
 

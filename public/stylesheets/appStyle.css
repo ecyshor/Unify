@@ -21,3 +21,7 @@
     height: 100px;
     overflow: auto;
 }
+
+input {
+    margin-bottom: 10px;
+}
