@@ -66,3 +66,14 @@ app.get('/logout', function (req, res) {
     req.logout();
     res.redirect('/');
 });
+app.post('/create', function (req, res) {
+    if (!req.user) {
+        throw new Error('user null');
+    }
+    var channel = req.body.channel;
+
+    res.render('/inc/allUsers/posts', {post: req.body.data, user: req.user.name}, function (err, html) {
+        pusher.trigger(channel, 'new-post', html);
+    });
+});
+
