@@ -74,7 +74,6 @@ app.post('/create', function (req, res) {
     res.render('\\inc\\allUsers\\posts', {posts: [
         {post: req.body.data, user: req.user._json.name}
     ]}, function (err, html) {
-        console.log(html);
         pusher.trigger(channel, 'new-post', html);
     });
 });
