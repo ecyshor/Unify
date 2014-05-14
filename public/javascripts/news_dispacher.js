@@ -10,11 +10,14 @@ pusher.connection.bind('state_change', function (states) {
 
 var channels = [];
 function subscribeToChannel(channelName) {
+    if (pusher.channel(channelName))
+        return true;
     var channel = pusher.subscribe(channelName);
     channel.bind('new-post', function (data) {
         alert(data);
         $('#centerPostsInsideJumbatron').prepend(data);
     });
+    $('#channels').prepend('<p>' + channelName + '</p>');
     channels.push(channel);
 }
 
