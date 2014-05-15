@@ -5,10 +5,10 @@
     .panel-heading
         | Post to channel:
         .panel-body
-            form(action='create',method='post')
+            form( id='postForm')
                 | Channel name:
-                input(type='text',name='channel')
+                input(type='text',name='channel', id='postChannel')
                 br
-                textarea(name='data')
+                textarea(name='data', id='postData')
                 input(type='submit', value='Post')
-
+script(src='/javascripts/submit_post.js')

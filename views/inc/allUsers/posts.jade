@@ -1,7 +1,10 @@
 if posts
     each val in posts
         .well
-            =val.user
+            =val.channel
                 | +
-            =val.post
-
+            =val.user.name
+                | +
+            =val.text
+                | +
+            =val.date

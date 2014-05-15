@@ -9,6 +9,7 @@ var path = require('path');
 var app = express();
 var passport = require('./lib/setup_passport');
 var pusher = require('./lib/setup_pusher');
+var mongoModel = require('./lib/setup_mongoose');
 // all environments
 
 app.set('port', process.env.PORT || 3000);
@@ -59,15 +60,33 @@ app.get('/logout', function (req, res) {
     res.redirect('/');
 });
 app.post('/create', function (req, res) {
-
-
-    return 'test';
-//    var channel = req.body.channel;
-//    res.render('\\inc\\allUsers\\posts', {posts: [
-//        {post: req.body.data, user: req.user._json.name}
-//    ]}, function (err, html) {
-//        return pusher.trigger(channel, 'new-post', {data: html});
-//    });
-
+    if (req.user) {
+        if (req.body.channel === '') {
+            res.end();
+            return null;
+        }
+        var newPost = new mongoModel.postModel({
+            channel: req.body.channel,
+            text: req.body.data,
+            user: {
+                name: req.user._json.name,
+                id: req.user._json.user_id
+            }
+        });
+        console.log(newPost);
+        res.render('\\inc\\allUsers\\posts', {posts: [
+            newPost
+        ]}, function (err, html) {
+            if (err === null) {
+                newPost.save(function (err) {
+                    if (err) // ...
+                        console.log(err);
+                });
+                pusher.trigger(newPost.channel, 'new-post', {data: html});
+            }
+        });
+    }
+    res.end();
+    return;
 });
 
