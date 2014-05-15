@@ -4,8 +4,8 @@
       <env name="AUTH0_CALLBACK_URL" value="http://localhost:3000/callback" />
       <env name="AUTH0_CLIENT_SECRET" value="HWTZHEKg4QZLQCzwQIijJJBIAenkaNxhAqHwM9F0bGsw_mxb54VvkEqw5wPetubn" />
       <env name="PUSHER_APP_SECRET" value="6e223bca731488710e45" />
-      <env name="AUTH0_DOMAIN" value="unify.auth0.com" />
       <env name="PUSHER_APP_ID" value="74507" />
+      <env name="AUTH0_DOMAIN" value="unify.auth0.com" />
       <env name="AUTH0_CLIENT_ID" value="0km8lNA8aNIpu3gUduZUhMTz84RaxWPc" />
       <env name="PUSHER_APP_KEY" value="383a1fd97db791afc762" />
     </envs>
