@@ -40,9 +40,12 @@ http.createServer(app).listen(app.get('port'), function () {
 
 
 app.get('/', routes.index);
+
 app.get('/error', function (req, res) {
     res.send("Error");
 });
+
+
 app.get('/callback',
     passport.authenticate('auth0',
         {   successRedirect: '/',
@@ -52,13 +55,17 @@ app.get('/callback',
         if (!req.user) {
             throw new Error('user null');
         }
+
         res.redirect("/");
     });
+
 
 app.get('/logout', function (req, res) {
     req.logout();
     res.redirect('/');
 });
+
+
 app.post('/create', function (req, res) {
     if (req.user) {
         if (req.body.channel === '') {

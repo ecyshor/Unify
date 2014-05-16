@@ -3,7 +3,7 @@
  * Pusher client side javascript
  */
 
-var pusher = new Pusher('383a1fd97db791afc762');
+var pusher = new Pusher('0007517e1e322f716c8a');
 pusher.connection.bind('state_change', function (states) {
     console.log("Pusher's current state is " + states.current);
 });
